@@ -1,38 +1,447 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* body {
+  overflow: hidden;
+} */
+
+.container {
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bgVideoClip {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  position: absolute;
+  width: 77%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 16%;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.paychekBtn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 16px;
+  background-color: black;
+  opacity: 60%;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.uniHeader {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 70px;
+  cursor: pointer;
+  width: 120px;
+  height: 90px;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-top: 60px;
+  margin-right: 100px;
+}
+
+.leftBody {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.benefits {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.subHeading {
+  font-weight: lighter;
+}
+
+.star {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.inputPhone {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  height: 30px;
+  padding: 6px;
+}
+
+.termsAndCondition {
+  margin-top: 40px;
+}
+
+.termsAndConditionLabel {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 4px;
+}
+
+.debitCard {
+  width: 400px;
+  height: 400px;
+}
+
+.infoAndDownButton {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 60vh;
+  margin: auto;
+  width: 800px;
+  margin-top: 100px;
+}
+
+.DownArrow {
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  border: 1px solid #fdef78;
+  border-radius: 150px;
+  background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+  padding: 30px;
+}
+
+.onePercentCashbackInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 100px;
+  margin-right: 100px;
+  height: 60vh;
+}
+
+.onePercentCashbackInfoLeftBody {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+}
+
+.onePercentCashbackTermsAndConditions {
+  margin-top: 40px;
+}
+
+.onePercentCashbackInfoRightBody {
+  margin-right: 250px;
+}
+
+.onePercentCashbackInfoImg {
+  width: 500px;
+  height: 500px;
+}
+
+.FiveXMoreCashbackValueInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 60px;
+  margin-right: 100px;
+  height: 60vh;
+}
+
+.FiveXMoreCashbackValueLeftBody {
+  margin-top: 40px;
+}
+
+.FiveXMoreCashbackValueRightBody {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-right: 250px;
+}
+
+.feeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: auto;
+  width: 800px;
+  margin-top: 60px;
+}
+
+.instantCreditInfo {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.instantCreditInfoLeftBody {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  margin-left: 200px;
+}
+
+.instantCreditTextInfo {
+  color: white;
+  margin-top: 40px;
+}
+
+.instantCreditTextInfoHeader {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.limittingPaymentInfoAndAdditionalInfo {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.additionalInfoWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.additionalInfoImg {
+  width: 100px;
+  height: 100px;
+}
+
+.additionalInfoHeader {
+  color: white;
+  margin-top: 40px;
+}
+
+.compliantImg {
+  height: 50px;
+  width: 50px;
+  margin-top: 40px;
+}
+
+.commitmentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin: auto;
+  /* margin-bottom: 40px; */
+  background-color: gray;
+}
+
+.commitmentInfoHeaderNextLine {
+  margin-left: 80px;
+}
+
+.commitmentInfoSubHeader {
+  margin-top: 40px;
+  width: 350px;
+}
+
+.sbmBankPromotion {
+  margin-top: 60px;
+}
+
+.guidelinesWrapper {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: black;
+}
+
+.guidelines {
+  width: 800px;
+  color: white;
+}
+
+.guidelinesNextLine {
+  width: 800px;
+  color: white;
+  margin-left: 40px;
+}
+
+.downloadButtonsWrapper {
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+}
+
+.downloadInfoAndButton {
+  margin-left: 400px;
+  margin-right: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.downloadButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+  border: 2px solid black;
+  border-radius: 16px;
+  width: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.standardsInfoWrapper {
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: gray;
+}
+
+.standardsInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.standardsInfoCompliantImg {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+.standardsInfoText {
+  margin-top: 12px;
+}
+
+.contactInfoWrapper {
+  height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+.contactInfoDetails {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.contactInfoUniHeader {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 70px;
+  cursor: pointer;
+  width: 120px;
+  height: 90px;
+} 
+
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 70px;
+}
+
+.address {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contactInfoUniHeader {
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
+  width: 120px;
+  height: 90px;
+}
+
+.horizontalLine {
+  margin-top: 20px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.bankInfo {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.bankInfoWrapper {
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  margin-left: 50px;
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.listSyles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
