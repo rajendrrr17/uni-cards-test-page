@@ -91,6 +91,29 @@
   margin-right: 2px;
 }
 
+.inputAndApplyNow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.applyNowBtn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 16px;
+  background-color: black;
+  opacity: 60%;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  margin-right: 100px;
+  margin-top: 40px;
+  margin-left: 8px;
+  background-color: yellow;
+  color: black;
+}
+
 .inputPhone {
   margin-top: 40px;
   background-color: black;
